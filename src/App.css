@@ -1,38 +1,84 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ececec;
+}
+
+h3, h4, h5, h6{
+  font-family: Poppins;
+  padding: 6px 0 0 0;
+  color: #111;
+}
+
+#inputs-container {
+  width: 100%;
+  margin-top: -25px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 0 100px;
+}
+
+input, button {
+  width: 280px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font: 400 16px Poppins;
+  border-radius: 4px;
+}
+
+input {
+  padding: 8px;
+}
+
+button {
+  background: #ee3333;
+  color: #fafafa;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+button:hover {
+  background: #fafafa;
+  color: #ee3333;
+}
+
+h6 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  max-width: 1100px;
+  align-content: center;
+  justify-items: center;
+  margin: 60px auto 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info-container {
+  width: 320px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
+  background: #ccc;
+  box-shadow: 0px 0px 14px #888;
+}
+
+.leaflet-container {
+  width: 320px;
+  height: 200px;
+  align-self: center;
+}
+
+.date-hour-div {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-between;
 }
