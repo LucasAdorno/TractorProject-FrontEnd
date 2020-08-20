@@ -15,3 +15,6 @@
 - if you don't have nodeJS on your device, install https://nodejs.org/en/download/
 - Insert the `npm i` to install all dependencies.
 - Insert `npm run start` to run.
+
+## Preview
+  <img src="screenshots/screenshot.png" width="800">
